@@ -1,0 +1,52 @@
+modelo cliente servidor, en donde el cliente pide informacion al servidor 
+JSON {nombre:valor}
+      datos -> parse
+               promesa -> respuestas
+
+ se van a enviar esos datos 
+
+acceder a infromacion fuera de la pagina web y se puede incluir APIs 
+fech es una URL de un archivo
+la computadora no tiene una lectura de los archivos JSON 
+
+se va a comprobar en el mundo fisico, como hacer que por medio de la entrada de una accion pueda modificar la base de datos 
+
+el trabajar ne equipo puede ser una forma de ser arte coolaborativo, pero debe de tenr una implicacion del componente de participacion, 
+coolaboracuon-> agentes ecternos pueden interactua con la pieza 
+la participacuon del puvlixo es una coolaboracion
+
+no es neecesaruo que ronde en la participacion -> interactuar 
+      PROVOCAR UNA FORMA DE INSTAR A EL PUBLICO EN LA PARTICIPACION DE LA PIEZA 
+
+ARTE COMUNITARIO?????? -> piezas de larga ejecucion y en un tri no se pude 
+
+----------------------------------------------------------------------------------
+
+formas de coolaboracion 
+-entrelazada
+-sumatoria
+-participativa
+
+se buscan publicos activos 
+
+piezas de Maria Abramovic y Ulay 
+      piezas de coolaboracion mutua entre los artistas y otras en donde se incluye al publico 
+            obras: 
+                  -Rest energy en donde se esta tirando de un arco y nunca se dispara la flecha 
+                  se habla de la vivencia de la fragilidad asi como una coolaboracion 
+                  -Imponderabilla ambos artistas se encontraban desnudos en la puerta del museo en donde ellos mismo habian mandado a hacer mas pequeña en donde la gente tenia que pasar en medio de ellos 
+
+DEJAR UNA ENTRADA ABIERTA PARA QUE EL PUBLICO INTERACTUE 
+
+Simone Forti HUDDLE ->  
+      arte coolaborativo en el cual las personas con una instrucion realizan una serie de movimientos de manera colectiva
+
+Arte dada
+  Francis picardia 
+      El gran vidrio (michel ducham)
+            idea de humanizar a la maquina, pieza que se contruye per nunca se da por acabada pero al momento de ser trasladada se rompe y el artista la da por terminada 
+
+El dada busca de una manera de humanizar a las maquinas, (pinturas)
+
+Alan Turring 
+      las maquinas pueden pensar, cuales son los numero computables para una computadora, 
