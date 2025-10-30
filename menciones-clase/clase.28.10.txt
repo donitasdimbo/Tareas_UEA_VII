@@ -1,0 +1,25 @@
+forma de generacion de bases de datos por medio de CSV
+
+se ordena por medio de categorias, en donde todo debe de estar ordenado para poder manejar los datos y generar una tabla, son valores separados por comas,
+
+se pone cada uno de los valores en el orden 
+
+Ejemplo:
+
+name, last name, ciudad, CP, 
+lola, jimenez, mexico, 52756
+
+*** siempre se debe de respetar el orden sino se pierde el orden
+*** para hacer un salto de linea no es necesario poner coma, se puede abrir de nuevo la secuencia. 
+
+en JSON 
+
+Ejemplo:
+
+{
+    "partes": ["mano", "dedo", "cuello"], 
+    "acciones": ["girar", "doblar", "cerrar"]
+}
+
+*** se crean categorias pero hay mas posibilidades de capturas de informacion, en caso de CSV no se puede ya que tiene otra captura de informacion. 
+
