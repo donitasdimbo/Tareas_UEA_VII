@@ -1,7 +1,0 @@
-Front-end = se trata de trabajar del lado del cliente, se centra en la inetraacion y lo que se ve como interfaz de usuario
-
-back-end = es el tipo de programacion que actua en el servidor, lo que debe de hacer una vez llega una solicutud del cliente 
-
-muchos de los proyectos se involucran con una interaccion del publico ya sea una recabacion de informacion, ya sea que nosotros las demos o se fabriquen dentro de la pagina (por eso nos involucramos con el FRONT-END Y BACK-END ), se contruye por medio de una base de datos los cuales nos serviran con esto.
-
-SUPABASE = es un proyecto que busca ser una base de datos, 

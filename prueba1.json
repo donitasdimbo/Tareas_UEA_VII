@@ -1,6 +1,0 @@
-{
-    "partes":["mano", "brazo", "cuello", "cabeza"], 
-    "acciones":["doblar", "girar", "cerrar", "girar"], 
-    "lado":["izquierda", "derecha"]
-}
-
