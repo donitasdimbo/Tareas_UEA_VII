@@ -1,0 +1,28 @@
+body{
+    background-color:burlywood;
+    margin:30px;
+}
+
+/* fuentes para la pagina NO SE MUEVA */
+@font-face {
+  font-family: "Azonix";
+  src: url("fonts/Azonix.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+h1{
+    font-family: "Azonix", sans-serif;
+    color: darkblue;
+    text-align: center;
+    font-size:45px;
+}
+
+p{
+    font-family: "Azonix", sans-serif;
+    color:cornflowerblue;
+    font-size:18px;
+    text-align: justify;
+}

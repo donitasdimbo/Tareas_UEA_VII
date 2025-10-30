@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes moviles</title>
+    <link rel="stylesheet" href="tarea1.css">
+
+</head>
+<body>
+    
+    <h1> Sopa del cuerpo </h1>
+    <p> esta sopa te pide que :</p>
+    <p><span id="accion"></span></p>
+    
+    <!--p id = "hola"></p-->
+    
+
+    <script>
+        //busca el archivo json
+        fetch('tarea.json')
+        //se hace una promesa de que se va a obtener la informacion del archivo JSON 
+        .then(response=>response.json())
+        .then(json=>{
+            //se obtiene la informacion de arrays de acciones y partes pero se busca uno en especifico
+            document.getElementById("accion").innerHTML=json.acciones[2] + " " + json.partes[0];
+            console.log(json);
+        })
+
+    </script>
+
+</body>
+</html> 
