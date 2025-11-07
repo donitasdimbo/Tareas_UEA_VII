@@ -1,0 +1,6 @@
+ahhh
+
+se intento hacer un enlace por medio del CURL para poder acceder a la base de datos de supabase 
+pd: no se logro ☺
+
+vamos a hacer la version banila. tendremos que ver como acceder a los datos

@@ -1,0 +1,22 @@
+Las bases de dato puede almacenar varios datos que nosotros le pidamos. 
+
+Para poder subir informacion va a ser necesario cifrarla, es decir tener una llave publica. 
+de igual manera necesitamos saber donde esta IP / URL
+
+Las clavez API sirven para poder jalar informacion al proyecto
+
+Clavez anon (Claves publicas) :
+    es una contrasena cifrabas bastante larga para que nadie pueda acceder a ella
+        es criptografia
+    Protegen los componentes publicos, se encuentra en las apps que necesitan para su activacion. 
+    cualquiera puede encontrarla si tiene la paciencia para buscarla. 
+    Por eso es necesario autentificar 
+
+IP Addres : son una serie de numeros los cuales nos localiza de manera cibernetica. 
+
+URL : es una serie de texto en cadena el cual podemos acceder a informacion que se encuentra en la web 
+
+ambas nos van a servir para iniciar una base de datos 
+
+contraseña de supabse
+DonitasDimbo123$
