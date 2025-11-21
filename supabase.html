@@ -10,17 +10,24 @@
 </head>
 
 <body>
-    <!--
-    <script>
-        //console.log(supabase);    
-    </script>
-    <script src= "supabase.js"></script>
-    
-    -->
 
     <p id = "nam">
-        
+       
+    <h1> Tabla </h1>
+
+    <p id = "frase"></p>
+    <p id = "frase2"></p>
+    <p id = "frase3"></p>
     </p>
+
+    <div id = "imag"></div>
+
+    <!--input type="text" id="datos">
+    <button type="button" oneclick="ponerTexto(document. getElementById('datos').value)">Enviar</button>
+    <p id="frase"> </p-->
+
+    <div id="audioContainer"></div>
+
     <script>
         const supabasePublicClient = supabase.createClient("https://gqqikxsrfkwcmnvpcwbv.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxcWlreHNyZmt3Y21udnBjd2J2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4OTk3OTcsImV4cCI6MjA3NzQ3NTc5N30.2y9dxp883o4Nkz6twH-u7sqYCpzdfam12olg10-ar4E",{
             db:{
@@ -29,13 +36,60 @@
         });
 
         // el "=>"" es una forma de hacer una funcion, es una funcion asincrona 
-        (async () => {
+        /*(async () => {
             const response = await supabasePublicClient.from("PruebaVIIo"). select ("cliente")
-            console.log (response)
+            console.log (response.data[0].cliente);
+            //console.log (response);
             // se debe de stringuear la respuesta para poder saber que es lo escritp
             //document.getElementById("nam").innerHTML= response;
-            document.getElementById("nam").innerHTML= JSON.stringify (response, null,2);
+            //document.getElementById("nam").innerHTML= JSON.stringify (response, null,2);
+
+            //El data es el array en dodne se encuentra la informacion el .cliente es el nombre de la columna en donde se encuentra la informacion
+            //Mas atencion Donnie ☺ 
+            document.getElementById("frase").innerHTML= response.data[0].cliente
+            document.getElementById("frase2").innerHTML= response.data[1].cliente
+            document.getElementById("frase3").innerHTML= response.data[2].cliente
+            
+        } ) ()*/
+
+        (async () => {
+            const response2 = await supabasePublicClient.storage.from("fotos"). getPublicUrl ("liy.jpg")
+            console.log (response2.data.PublicUrl);
+
+            const imgElement = document.createElement("img");
+            imgElement.src = response2.data.publicUrl;
+            imgElement.width = 400;
+            document.getElementById("imag").appendChild(imgElement);
+               
         } ) ()
+
+        /*para extraer el audio de la base de datos*/
+
+        async function cargarSonido() {
+            const response3 = await supabasePublicClient.storage.from("fotos"). getPublicUrl ("123audio.mp3")
+            console.log (response3.data.PublicUrl);
+
+            const sndElement = document.createElement("audio");
+            sndElement.src = response3.data.publicUrl;
+            document.getElementById("audioContainer").appendChild(sndElement); 
+        }
+        cargarSonido();
+
+        /*async function ponerTexto(registro) {
+            const respuesta=await supabasePublicClient.from ('PruebaVIIo').insert([
+                {prueba1:registro},])
+        }
+
+        ponerTexto();
+            
+        (async () => {
+            const response = await supabaseClient.from("PruebaVIIo").select("*")
+            console.log(response);
+            document.getElementById("frase").innerHTML = response.data[0].anotaciones
+            document.getElementById("frase").innerHTML = response.data[1].anotaciones
+            document.getElementById("frase").innerHTML = response.data[2].anotaciones
+        })()*/
+
     </script>
     
 </body>

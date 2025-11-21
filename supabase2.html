@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supabase connect</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<body>
+
+    <input type="text" id="datos">
+    <button type="button" oneclick="ponerTexto(document. getElementById('datos').value)">Enviar</button>
+    <p id="frase"> </p>
+    
+    <script>
+    const supabasePublicClient = supabase.createClient(
+        "https://gqqikxsrfkwcmnvpcwbv.supabase.co",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxcWlreHNyZmt3Y21udnBjd2J2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4OTk3OTcsImV4cCI6MjA3NzQ3NTc5N30.2y9dxp883o4Nkz6twH-u7sqYCpzdfam12olg10-ar4E"
+    );
+
+    async function ponerTexto(registro) {
+        const respuesta = await supabasePublicClient
+            .from("PruebaVIIo")
+            .insert([{ prueba1: registro }]);
+
+        console.log("INSERT:", respuesta);
+    }
+
+    (async () => {
+        const response = await supabasePublicClient
+            .from("PruebaVIIo")
+            .select("*");
+
+        console.log("SELECT:", response);
+
+        if (response.data && response.data.length > 0) {
+            document.getElementById("frase").innerHTML = response.data[0].cliente;
+        }
+    })();
+</script>
+
+</body>
+</html>
